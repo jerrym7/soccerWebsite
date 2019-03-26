@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<script src="/js/myScript.js"></script>
+<html>
+<head>
+    <title>Main Portfolio</title>
+    <link rel="stylesheet" type = "text/css" href="css/indexstyles.css">
+</head>
+<body>
+<script src="javascript/indexjs.js"></script>
+<div class="parent">
+   <h1 class="restwidth">Soccer League</h1>
+    <div class="btn-group">
+        <button class="btnone">About</button>
+        <button class="btnone">Contact</button>
+        <button class="btnone">Leagues</button>
+        <button class="btnone">Menu</button>
+    </div>
+</div>
+</br>
+</br>
+</br>
+<div>
+<h2 id="phpid" onclick="getHttpReq()">Hello</h2>
+</div>
+<h2 class="one">Saturday's League Standing</h2>
+<table border="1" from = box rules = "rows" id="mytab" onclick = "moveRows()" width = "50%" >
+    <tr class ="hrow">
+        <th>Pos</th>
+        <th>Club</th>
+        <th>MP</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>GF</th>
+        <th>GA</th>
+        <th>GD</th>
+        <th>Pts</th>
+    </tr>
+    <tr id="posid0">
+        <td>1</td>
+        <td>Chivas</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr id="posid1">
+        <td>2</td>
+        <td>America</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr id="posid2">
+        <td>3</td>
+        <td>Cruz Azul</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr id="posid3">
+        <td>4</td>
+        <td>Pumas</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr id="posid4">
+        <td>5</td>
+        <td>Leon</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr id="posid5">
+        <td>6</td>
+        <td>Tigres</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr id="posid6">
+        <td>7</td>
+        <td>Necaxa</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr id="posid7">
+        <td>8</td>
+        <td>Chivas</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr id="posid8">
+        <td>9</td>
+        <td>Santos</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+
+</table>
+</br>
+</br>
+<h2 class="one">Next Week Matches:</h2>
+<div class="container">
+</div>
+</br>
+</br>
+</br>
+<h2 class="one">News:</h2>
+<div class="container">
+</div>
+
+
+</body>
+<script>
+    document.getElementById("mytab").onclick = function() {moveRows()};
+    function moveRows() {
+        var rone = document.getElementById("rone").innerHTML;
+        document.getElementById("rone").innerHTML = document.getElementById("rtwo").innerHTML;
+        document.getElementById("rtwo").innerHTML = rone;
+
+        alert("Yup");
+    }
+
+</script>
+</html>

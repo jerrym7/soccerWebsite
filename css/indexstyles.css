@@ -1,0 +1,81 @@
+/*This is code for general*/
+body{
+    color: #90A4AE;
+    background-color: #424242;
+}
+h1.restwidth{
+    flex: 1;
+    color: white;
+}
+h2.one{
+    color: #90A4AE;
+    text-align: center;
+}
+
+/* div styles*/
+
+.parent{
+    display: flex;
+    background-color: #006064; /* blueish */
+}
+
+/*button styles*/
+.btn-group .btnone{
+    background-color: #006064; /* blueish */
+    border: 1px solid #006064;
+    color: white;
+    padding: 25px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    height:100%
+}
+.btn-group .btnone:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.btn-group .btnone:hover {
+    background-color: #005357;
+}
+.btn-group{
+    float: right;
+}
+
+
+
+
+/* This is the code for table*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 20px;
+}
+td{
+    border-left: 1px;
+    text-align: center;
+}
+tr:nth-child(-n+5){
+    background-color: #2e6130;
+}
+tr:hover:nth-child(-n+5){ /*get first 5 rows*/
+    background-color: #263238;
+}
+tr.hrow{
+background-color: #424242;
+}
+tr.hrow:hover{
+}
+tr{
+    background-color: #6e1313;
+    padding: 50px;
+}
+tr:hover{
+    background-color: #263238;
+}
+
+
